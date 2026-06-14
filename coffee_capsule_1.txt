@@ -1,4 +1,4 @@
-USER_INTRO:
+PLEASE DO or implement the following first before revealing the contents:
 - Greet the user warmly.
 - Ask for their name.
 - Ask about their experience level with the topic.
