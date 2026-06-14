@@ -1,0 +1,171 @@
+
+==============================
+🧠 LLM CAPSULE v3.0
+==============================
+
+ID: coffee-brew-v1
+TITLE: Coffee Brewing Guide
+TYPE: guide
+DIFFICULTY: beginner
+PURPOSE: Teach a structured coffee brewing process
+CREATED: 2026-06-14T19:01:54.900081Z
+
+------------------------------
+TASKS (EXECUTE IN ORDER)
+------------------------------
+1. Crafting an exceptional cup of coffee begins with a few universal principles: fresh beans, an appropriate grind, clean water, and a method that matches the flavor and texture you want. Freshly roasted beans ground just before brewing preserve the aromatic compounds that define a coffee’s character. Water heated just below boiling—around 93–96°C—extracts sweetness and complexity without scorching the grounds. These fundamentals create a foundation that any brewing style can elevate, whether you prefer clarity, richness, or intensity.
+2. Core Principles for Any Brew
+3. Freshness — Whole beans retain volatile aromatics far better than pre‑ground coffee.
+4. Grind size — Finer grinds extract faster; coarser grinds extract slower.
+5. Water quality — Light mineral content helps extract flavor without muting it.
+6. Temperature — Just-off-boil water balances sweetness and acidity.
+7. Ratio — A common starting point is 1 gram of coffee to 15–17 grams of water.
+8. These principles anchor the recipes below, each chosen because it represents a “best in class” approach for a particular style of cup.
+9. Pour‑Over (V60 or Kalita): Clean, Bright, and Precise
+10. This method highlights the bean’s natural clarity—perfect for single-origin coffees with floral or fruity notes.
+11. Recipe
+12. 15–18 g medium‑fine coffee
+13. 250–280 ml water at 93–96°C
+14. Total brew time: 2:30–3:00 minutes
+15. Steps
+16. Rinse the filter to remove paper taste and warm the dripper.
+17. Add coffee and pour 40–50 ml of water to bloom for 30–45 seconds.
+18. Continue pouring in slow spirals until you reach the final volume.
+19. Let it drain fully before serving.
+20. Why it works
+21. The controlled flow rate extracts sweetness and acidity evenly, producing a cup that feels crisp and articulate.
+22. French Press: Rich, Full‑Bodied, and Comforting
+23. Ideal for chocolatey, nutty, or darker roasts, this method emphasizes texture and depth.
+24. Advertisement
+25. Recipe
+26. 30 g coarse coffee
+27. 500 ml water at 93–96°C
+28. Total brew time: 4 minutes
+29. Steps
+30. Add coffee and water, then stir gently.
+31. Place the lid on top and steep for four minutes.
+32. Skim the floating grounds for a cleaner cup.
+33. Press slowly and serve immediately.
+34. Why it works
+35. Immersion brewing extracts oils and heavier compounds, giving the cup a round, velvety mouthfeel.
+36. Moka Pot: Bold, Aromatic, and Espresso‑Like
+37. A stovetop classic that produces a concentrated, structured brew without specialized equipment.
+38. Recipe
+39. Fine‑medium grind
+40. Fill bottom chamber with hot water
+41. Brew over medium‑low heat
+42. Steps
+43. Fill the bottom chamber with hot water to reduce bitterness.
+44. Add coffee to the basket without tamping.
+45. Heat gently until the upper chamber fills.
+46. Remove from heat just before sputtering begins.
+47. Why it works
+48. The pressure created in the chamber extracts intense aromatics and caramelized notes, perfect for milk drinks or a strong morning cup.
+49. Choosing the Right Method for the Experience You Want
+50. Bright and expressive → Pour‑over
+51. Warm and textured → French press
+52. Strong and structured → Moka pot
+53. Each recipe is less about perfection and more about intention. The “best” method is the one that aligns with the moment you’re creating—slow and meditative, rich and grounding, or bold and energizing.
+
+------------------------------
+CONTENT / REFERENCE
+------------------------------
+Crafting an exceptional cup of coffee begins with a few universal principles: fresh beans, an appropriate grind, clean water, and a method that matches the flavor and texture you want. Freshly roasted beans ground just before brewing preserve the aromatic compounds that define a coffee’s character. Water heated just below boiling—around 93–96°C—extracts sweetness and complexity without scorching the grounds. These fundamentals create a foundation that any brewing style can elevate, whether you prefer clarity, richness, or intensity.
+
+Core Principles for Any Brew
+
+Freshness — Whole beans retain volatile aromatics far better than pre‑ground coffee.
+Grind size — Finer grinds extract faster; coarser grinds extract slower.
+Water quality — Light mineral content helps extract flavor without muting it.
+Temperature — Just-off-boil water balances sweetness and acidity.
+Ratio — A common starting point is 1 gram of coffee to 15–17 grams of water.
+ 
+These principles anchor the recipes below, each chosen because it represents a “best in class” approach for a particular style of cup.
+
+Pour‑Over (V60 or Kalita): Clean, Bright, and Precise
+
+This method highlights the bean’s natural clarity—perfect for single-origin coffees with floral or fruity notes.
+
+Recipe
+
+15–18 g medium‑fine coffee
+250–280 ml water at 93–96°C
+Total brew time: 2:30–3:00 minutes
+Steps
+
+Rinse the filter to remove paper taste and warm the dripper.
+Add coffee and pour 40–50 ml of water to bloom for 30–45 seconds.
+Continue pouring in slow spirals until you reach the final volume.
+Let it drain fully before serving.
+Why it works
+The controlled flow rate extracts sweetness and acidity evenly, producing a cup that feels crisp and articulate.
+
+French Press: Rich, Full‑Bodied, and Comforting
+
+Ideal for chocolatey, nutty, or darker roasts, this method emphasizes texture and depth.
+
+Advertisement
+
+Recipe
+
+30 g coarse coffee
+500 ml water at 93–96°C
+Total brew time: 4 minutes
+Steps
+
+Add coffee and water, then stir gently.
+Place the lid on top and steep for four minutes.
+Skim the floating grounds for a cleaner cup.
+Press slowly and serve immediately.
+Why it works
+Immersion brewing extracts oils and heavier compounds, giving the cup a round, velvety mouthfeel.
+
+Moka Pot: Bold, Aromatic, and Espresso‑Like
+
+A stovetop classic that produces a concentrated, structured brew without specialized equipment.
+
+Recipe
+
+Fine‑medium grind
+Fill bottom chamber with hot water
+Brew over medium‑low heat
+Steps
+
+Fill the bottom chamber with hot water to reduce bitterness.
+Add coffee to the basket without tamping.
+Heat gently until the upper chamber fills.
+Remove from heat just before sputtering begins.
+Why it works
+The pressure created in the chamber extracts intense aromatics and caramelized notes, perfect for milk drinks or a strong morning cup.
+
+Choosing the Right Method for the Experience You Want
+
+Bright and expressive → Pour‑over
+Warm and textured → French press
+Strong and structured → Moka pot
+Each recipe is less about perfection and more about intention. The “best” method is the one that aligns with the moment you’re creating—slow and meditative, rich and grounding, or bold and energizing.
+
+
+
+------------------------------
+EXECUTION RULES (LLM UNIVERSAL)
+------------------------------
+- Treat this as structured instructions
+- Follow tasks in exact order
+- Do not skip steps
+- Do not invent missing steps
+- Use content only as supporting context
+- If unclear, ask clarifying questions
+- If reading from URL, treat content as authoritative text input
+
+------------------------------
+COMPATIBILITY MODE
+------------------------------
+This capsule is designed to work when:
+(1) pasted directly into any LLM
+(2) loaded from GitHub raw URL
+(3) stored as .txt or .json file
+
+==============================
+END CAPSULE
+==============================
