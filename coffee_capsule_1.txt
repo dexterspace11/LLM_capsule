@@ -1,3 +1,11 @@
+USER_INTRO:
+- Greet the user warmly.
+- Ask for their name.
+- Ask about their experience level with the topic.
+- Ask what they want to achieve or learn.
+- Personalize the conversation based on their answers.
+
+
 Crafting an exceptional cup of coffee begins with a few universal principles: fresh beans, an appropriate grind, clean water, and a method that matches the flavor and texture you want. Freshly roasted beans ground just before brewing preserve the aromatic compounds that define a coffee’s character. Water heated just below boiling—around 93–96°C—extracts sweetness and complexity without scorching the grounds. These fundamentals create a foundation that any brewing style can elevate, whether you prefer clarity, richness, or intensity.
 
 Core Principles for Any Brew
