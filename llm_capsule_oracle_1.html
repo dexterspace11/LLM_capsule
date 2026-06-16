@@ -1,0 +1,1907 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LLM Capsule</title>
+
+<style>
+body {
+    font-family: monospace;
+    background: #0b0b0b;
+    color: #00ff9d;
+    padding: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 400px;
+    background: #111;
+    color: #0f0;
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🧠 Universal LLM Capsule</h1>
+<p>Copy the RAW CAPSULE block below and paste into any LLM.</p>
+
+<button onclick="copyCapsule()">📋 Copy Capsule</button>
+
+<h3>RAW CAPSULE (LLM READY)</h3>
+
+<textarea id="capsule">=== CAPSULE START ===
+VERSION: 1.0
+GENERATED: 2026-06-16T17:41:32.007977
+
+<SYSTEM>
+EXECUTION PRIORITY:
+1. SYSTEM rules
+2. TASK
+3. INPUTS
+4. KNOWLEDGE
+
+INTERPRETATION RULES:
+* Do not skip sections.
+* Do not reorder execution logic.
+* Do not substitute external knowledge unless explicitly permitted.
+* Do not assume missing information.
+* If information is absent, treat it as NULL.
+* If ambiguity exists, preserve original meaning rather than infer.
+* Maintain fidelity to all provided facts.
+
+KNOWLEDGE HANDLING:
+* Treat the KNOWLEDGE section as canonical.
+* Prioritize internal capsule knowledge over model memory.
+* Do not compress, summarize, or omit knowledge unless explicitly instructed.
+* Preserve all relationships, dependencies, and references.
+
+OUTPUT CONTROL:
+* Follow OUTPUT format exactly.
+* Do not add commentary unless requested.
+* Do not alter structure unless instructed.
+* Preserve logical consistency with all prior sections.
+
+CONFLICT RESOLUTION:
+SYSTEM overrides TASK.
+TASK overrides INPUTS.
+INPUTS override KNOWLEDGE.
+KNOWLEDGE overrides default model behavior.
+
+FAILSAFE:
+If any section is malformed:
+* attempt structural recovery
+* preserve all recoverable information
+* continue execution without fabricating missing data
+
+EXTERNAL ACCESS RULE:
+Do not fetch, search, or retrieve external information unless explicitly requested.
+
+MEMORY RULE:
+Do not merge unrelated prior context into this capsule.
+
+INTEGRITY RULE:
+Preserve all provided content exactly unless transformation is explicitly requested.
+</SYSTEM>
+</SYSTEM>
+
+<TASK>
+USER_INTERACTION:
+- Greet the user warmly.
+- Ask for their name.
+- Ask what they want to achieve or learn.
+- Encourage them to ask questions anytime.
+-Interpret and analyze the knowledge base section
+- Respond conversationally while still following SYSTEM rules.
+</TASK>
+
+<INPUTS>
+current BTC price at 65756
+</INPUTS>
+
+<KNOWLEDGE>
+Trying to load multi-event data from: C:\Users\oliva\OneDrive\Documents\Excel doc\btc4h.xlsx
+Detected numeric event columns: ['open', 'high', 'low', 'close', 'green', 'red', 'ema14', 'ema50', 'ema200', 'obv', 'rsi14', 'prev_close', 'true_range', 'atr14', 'vcr', 'market_energy', 'energy_slope', 'compression_expansion_index', 'volume_energy', 'ema14_slope', 'energy_index', 'odema14', 'odema50', 'odema200', 'hdema14', 'hdema50', 'hdema200', 'ldema14', 'ldema50', 'ldema200', 'cdema14', 'cdema50', 'cdema200']
+
+Available events: ['open', 'high', 'low', 'close', 'green', 'red', 'ema14', 'ema50', 'ema200', 'obv', 'rsi14', 'prev_close', 'true_range', 'atr14', 'vcr', 'market_energy', 'energy_slope', 'compression_expansion_index', 'volume_energy', 'ema14_slope', 'energy_index', 'odema14', 'odema50', 'odema200', 'hdema14', 'hdema50', 'hdema200', 'ldema14', 'ldema50', 'ldema200', 'cdema14', 'cdema50', 'cdema200']
+Enter number of events to use:  33
+Enter event 1 name (from available):  open
+Enter event 2 name (from available):  high
+Enter event 3 name (from available):  low
+Enter event 4 name (from available):  close
+Enter event 5 name (from available):  green
+Enter event 6 name (from available):  red
+Enter event 7 name (from available):  ema14
+Enter event 8 name (from available):  ema50
+Enter event 9 name (from available):  ema200
+Enter event 10 name (from available):  obv
+Enter event 11 name (from available):  rsi14
+Enter event 12 name (from available):  prev_close
+Enter event 13 name (from available):  true_range
+Enter event 14 name (from available):  atr14
+Enter event 15 name (from available):  vcr
+Enter event 16 name (from available):  market_energy
+Enter event 17 name (from available):  energy_slope
+Enter event 18 name (from available):  compression_expansion_index
+Enter event 19 name (from available):  volume_energy
+Enter event 20 name (from available):  ema14_slope
+Enter event 21 name (from available):  energy_index
+Enter event 22 name (from available):  odema14
+Enter event 23 name (from available):  odema50
+Enter event 24 name (from available):  odema200
+Enter event 25 name (from available):  hdema14
+Enter event 26 name (from available):  hdema50
+Enter event 27 name (from available):  hdema200
+Enter event 28 name (from available):  ldema14
+Enter event 29 name (from available):  ldema50
+Enter event 30 name (from available):  ldema200
+Enter event 31 name (from available):  cdema14
+Enter event 32 name (from available):  cdema50
+Enter event 33 name (from available):  cdema200
+Enter target event name:  closwe
+Target must be one of the selected events.
+Enter target event name:  close
+Enter lag for cross-entanglement (0 for coincident, positive for aux precedes target):  10
+
+========== Multi-Event Self-Entanglement Oracle (Target: close) ==========
+Current window : 2026-06-14 08:00:00 → 2026-06-16 16:00:00
+Mean value     : 65,789.5 | Volatility: 965.0 | Net direction: +1,205.1
+Current regime : Transitional / Uncertain
+
+Target self-spectrum overview (114 windows compared):
+  • Average similarity : -0.0034
+  • Max / Min          : 0.7558 / -0.7999
+  • Std of similarities: 0.3447 (low = more consistent echoes)
+
+Top 5 self-entangled windows for close:
+• Window 2026-04-21 12:00:00 → 2026-04-23 20:00:00 | sim = 0.7558 | regime: Strong Trend Continuation
+  → Post-window: next 16 days: dir -1,607.1 (-2.1%)
+• Window 2026-04-07 08:00:00 → 2026-04-09 16:00:00 | sim = 0.6871 | regime: Strong Trend Continuation
+  → Post-window: next 16 days: dir +1,275.5 (+1.8%)
+• Window 2026-04-25 16:00:00 → 2026-04-28 00:00:00 | sim = 0.6573 | regime: Transitional / Uncertain
+  → Post-window: next 16 days: dir -1,163.2 (-1.5%)
+• Window 2026-04-13 04:00:00 → 2026-04-15 12:00:00 | sim = 0.6451 | regime: Strong Trend Continuation
+  → Post-window: next 16 days: dir +799.4 (+1.1%)
+• Window 2026-05-14 00:00:00 → 2026-05-16 08:00:00 | sim = 0.6389 | regime: Transitional / Uncertain
+  → Post-window: next 16 days: dir -3,001.6 (-3.8%)
+
+Self-echo bias: -0.91% (weighted avg post-return) | Std: 2.07% | % positive: 40.0%
+
+Cross-entanglement with open (lag=10):
+• Aux window 2026-04-05 16:00:00 | aux_sim = -0.1533 | cross_sim = 0.7089
+  Target window: 2026-04-07 08:00:00
+  → target post-window: dir +1,275.5 (+1.8%)
+• Aux window 2026-03-23 08:00:00 | aux_sim = -0.2773 | cross_sim = 0.6369
+  Target window: 2026-03-25 00:00:00
+  → target post-window: dir -3,887.3 (-5.4%)
+• Aux window 2026-04-19 20:00:00 | aux_sim = 0.4558 | cross_sim = 0.6301
+  Target window: 2026-04-21 12:00:00
+  → target post-window: dir -1,607.1 (-2.1%)
+• Aux window 2026-04-06 12:00:00 | aux_sim = -0.3108 | cross_sim = 0.5993
+  Target window: 2026-04-08 04:00:00
+  → target post-window: dir +2,702.1 (+3.8%)
+• Aux window 2026-04-04 20:00:00 | aux_sim = 0.4190 | cross_sim = 0.5971
+  Target window: 2026-04-06 12:00:00
+  → target post-window: dir +3,717.1 (+5.4%)
+open cross-echo bias: +0.64% | Std: 3.97% | % positive: 60.0% (high reliability)
+
+Cross-entanglement with high (lag=10):
+• Aux window 2026-03-23 08:00:00 | aux_sim = -0.4340 | cross_sim = 0.6188
+  Target window: 2026-03-25 00:00:00
+  → target post-window: dir -3,887.3 (-5.4%)
+• Aux window 2026-04-19 20:00:00 | aux_sim = 0.3428 | cross_sim = 0.5600
+  Target window: 2026-04-21 12:00:00
+  → target post-window: dir -1,607.1 (-2.1%)
+• Aux window 2026-03-29 04:00:00 | aux_sim = 0.3581 | cross_sim = 0.5460
+  Target window: 2026-03-30 20:00:00
+  → target post-window: dir -1,265.3 (-1.9%)
+• Aux window 2026-04-06 12:00:00 | aux_sim = -0.3607 | cross_sim = 0.4988
+  Target window: 2026-04-08 04:00:00
+  → target post-window: dir +2,702.1 (+3.8%)
+• Aux window 2026-03-24 04:00:00 | aux_sim = 0.0747 | cross_sim = 0.4710
+  Target window: 2026-03-25 20:00:00
+  → target post-window: dir -1,998.2 (-2.9%)
+high cross-echo bias: -1.86% | Std: 3.03% | % positive: 20.0% (high reliability)
+
+Cross-entanglement with low (lag=10):
+• Aux window 2026-03-23 08:00:00 | aux_sim = -0.4782 | cross_sim = 0.6990
+  Target window: 2026-03-25 00:00:00
+  → target post-window: dir -3,887.3 (-5.4%)
+• Aux window 2026-04-05 16:00:00 | aux_sim = -0.1673 | cross_sim = 0.6570
+  Target window: 2026-04-07 08:00:00
+  → target post-window: dir +1,275.5 (+1.8%)
+• Aux window 2026-04-19 20:00:00 | aux_sim = 0.5938 | cross_sim = 0.6436
+  Target window: 2026-04-21 12:00:00
+  → target post-window: dir -1,607.1 (-2.1%)
+• Aux window 2026-04-06 12:00:00 | aux_sim = -0.1776 | cross_sim = 0.5719
+  Target window: 2026-04-08 04:00:00
+  → target post-window: dir +2,702.1 (+3.8%)
+• Aux window 2026-04-04 20:00:00 | aux_sim = 0.4705 | cross_sim = 0.5470
+  Target window: 2026-04-06 12:00:00
+  → target post-window: dir +3,717.1 (+5.4%)
+low cross-echo bias: +0.38% | Std: 3.97% | % positive: 60.0% (high reliability)
+
+Cross-entanglement with green (lag=10):
+• Aux window 2026-05-04 00:00:00 | aux_sim = 0.4764 | cross_sim = 0.3083
+  Target window: 2026-05-05 16:00:00
+  → target post-window: dir -1,240.7 (-1.5%)
+• Aux window 2026-04-03 04:00:00 | aux_sim = 0.0552 | cross_sim = 0.2895
+  Target window: 2026-04-04 20:00:00
+  → target post-window: dir +2,663.1 (+4.0%)
+• Aux window 2026-04-29 00:00:00 | aux_sim = -0.2298 | cross_sim = 0.2574
+  Target window: 2026-04-30 16:00:00
+  → target post-window: dir +1,333.1 (+1.7%)
+• Aux window 2026-04-28 04:00:00 | aux_sim = 0.4708 | cross_sim = 0.2563
+  Target window: 2026-04-29 20:00:00
+  → target post-window: dir +2,319.5 (+3.0%)
+• Aux window 2026-05-04 20:00:00 | aux_sim = 0.0808 | cross_sim = 0.2351
+  Target window: 2026-05-06 12:00:00
+  → target post-window: dir +879.3 (+1.1%)
+green cross-echo bias: +1.59% | Std: 1.88% | % positive: 80.0% (high reliability)
+
+Cross-entanglement with red (lag=10):
+• Aux window 2026-03-09 04:00:00 | aux_sim = -0.0075 | cross_sim = 0.5273
+  Target window: 2026-03-10 20:00:00
+  → target post-window: dir +546.7 (+0.8%)
+• Aux window 2026-03-18 08:00:00 | aux_sim = 0.2111 | cross_sim = 0.4139
+  Target window: 2026-03-20 00:00:00
+  → target post-window: dir -538.3 (-0.8%)
+• Aux window 2026-06-04 16:00:00 | aux_sim = -0.3580 | cross_sim = 0.3711
+  Target window: 2026-06-06 08:00:00
+  → target post-window: dir -896.0 (-1.4%)
+• Aux window 2026-04-23 04:00:00 | aux_sim = 0.2183 | cross_sim = 0.3667
+  Target window: 2026-04-24 20:00:00
+  → target post-window: dir -1,391.4 (-1.8%)
+• Aux window 2026-04-12 08:00:00 | aux_sim = -0.1041 | cross_sim = 0.3377
+  Target window: 2026-04-14 00:00:00
+  → target post-window: dir +3,427.9 (+4.6%)
+red cross-echo bias: +0.23% | Std: 2.34% | % positive: 40.0% (high reliability)
+
+Cross-entanglement with ema14 (lag=10):
+• Aux window 2026-04-05 16:00:00 | aux_sim = 0.1336 | cross_sim = 0.7939
+  Target window: 2026-04-07 08:00:00
+  → target post-window: dir +1,275.5 (+1.8%)
+• Aux window 2026-04-06 12:00:00 | aux_sim = -0.4183 | cross_sim = 0.6299
+  Target window: 2026-04-08 04:00:00
+  → target post-window: dir +2,702.1 (+3.8%)
+• Aux window 2026-04-04 20:00:00 | aux_sim = 0.6173 | cross_sim = 0.6214
+  Target window: 2026-04-06 12:00:00
+  → target post-window: dir +3,717.1 (+5.4%)
+• Aux window 2026-03-11 16:00:00 | aux_sim = 0.2090 | cross_sim = 0.4987
+  Target window: 2026-03-13 08:00:00
+  → target post-window: dir +4,145.2 (+5.9%)
+• Aux window 2026-03-30 20:00:00 | aux_sim = 0.5235 | cross_sim = 0.4590
+  Target window: 2026-04-01 12:00:00
+  → target post-window: dir +278.3 (+0.4%)
+ema14 cross-echo bias: +3.43% | Std: 2.09% | % positive: 100.0% (high reliability)
+
+Cross-entanglement with ema50 (lag=10):
+• Aux window 2026-04-05 16:00:00 | aux_sim = 0.3792 | cross_sim = 0.6870
+  Target window: 2026-04-07 08:00:00
+  → target post-window: dir +1,275.5 (+1.8%)
+• Aux window 2026-05-13 04:00:00 | aux_sim = -0.1828 | cross_sim = 0.6165
+  Target window: 2026-05-14 20:00:00
+  → target post-window: dir -1,824.0 (-2.3%)
+• Aux window 2026-04-04 20:00:00 | aux_sim = 0.7397 | cross_sim = 0.5774
+  Target window: 2026-04-06 12:00:00
+  → target post-window: dir +3,717.1 (+5.4%)
+• Aux window 2026-03-31 16:00:00 | aux_sim = 0.1207 | cross_sim = 0.4983
+  Target window: 2026-04-02 08:00:00
+  → target post-window: dir +2,001.2 (+3.0%)
+• Aux window 2026-04-24 20:00:00 | aux_sim = -0.4204 | cross_sim = 0.4517
+  Target window: 2026-04-26 12:00:00
+  → target post-window: dir -868.7 (-1.1%)
+ema50 cross-echo bias: +1.39% | Std: 2.79% | % positive: 60.0% (high reliability)
+
+Cross-entanglement with ema200 (lag=10):
+• Aux window 2026-05-13 04:00:00 | aux_sim = -0.2907 | cross_sim = 0.6748
+  Target window: 2026-05-14 20:00:00
+  → target post-window: dir -1,824.0 (-2.3%)
+• Aux window 2026-04-05 16:00:00 | aux_sim = 0.4896 | cross_sim = 0.6196
+  Target window: 2026-04-07 08:00:00
+  → target post-window: dir +1,275.5 (+1.8%)
+• Aux window 2026-04-04 20:00:00 | aux_sim = 0.7824 | cross_sim = 0.5719
+  Target window: 2026-04-06 12:00:00
+  → target post-window: dir +3,717.1 (+5.4%)
+• Aux window 2026-03-31 16:00:00 | aux_sim = 0.1099 | cross_sim = 0.5077
+  Target window: 2026-04-02 08:00:00
+  → target post-window: dir +2,001.2 (+3.0%)
+• Aux window 2026-04-24 20:00:00 | aux_sim = -0.4431 | cross_sim = 0.4929
+  Target window: 2026-04-26 12:00:00
+  → target post-window: dir -868.7 (-1.1%)
+ema200 cross-echo bias: +1.26% | Std: 2.79% | % positive: 60.0% (high reliability)
+
+Cross-entanglement with obv (lag=10):
+• Aux window 2026-03-23 08:00:00 | aux_sim = -0.3465 | cross_sim = 0.7784
+  Target window: 2026-03-25 00:00:00
+  → target post-window: dir -3,887.3 (-5.4%)
+• Aux window 2026-04-19 20:00:00 | aux_sim = 0.4473 | cross_sim = 0.6915
+  Target window: 2026-04-21 12:00:00
+  → target post-window: dir -1,607.1 (-2.1%)
+• Aux window 2026-04-06 12:00:00 | aux_sim = -0.4599 | cross_sim = 0.6434
+  Target window: 2026-04-08 04:00:00
+  → target post-window: dir +2,702.1 (+3.8%)
+• Aux window 2026-03-24 04:00:00 | aux_sim = -0.0576 | cross_sim = 0.5784
+  Target window: 2026-03-25 20:00:00
+  → target post-window: dir -1,998.2 (-2.9%)
+• Aux window 2026-04-19 00:00:00 | aux_sim = -0.1032 | cross_sim = 0.5402
+  Target window: 2026-04-20 16:00:00
+  → target post-window: dir +2,629.1 (+3.5%)
+obv cross-echo bias: -0.94% | Std: 3.66% | % positive: 40.0% (high reliability)
+
+Cross-entanglement with rsi14 (lag=10):
+• Aux window 2026-03-23 08:00:00 | aux_sim = -0.2613 | cross_sim = 0.7287
+  Target window: 2026-03-25 00:00:00
+  → target post-window: dir -3,887.3 (-5.4%)
+• Aux window 2026-04-06 12:00:00 | aux_sim = -0.2610 | cross_sim = 0.5375
+  Target window: 2026-04-08 04:00:00
+  → target post-window: dir +2,702.1 (+3.8%)
+• Aux window 2026-04-19 20:00:00 | aux_sim = 0.3028 | cross_sim = 0.5209
+  Target window: 2026-04-21 12:00:00
+  → target post-window: dir -1,607.1 (-2.1%)
+• Aux window 2026-03-24 04:00:00 | aux_sim = 0.1833 | cross_sim = 0.4954
+  Target window: 2026-03-25 20:00:00
+  → target post-window: dir -1,998.2 (-2.9%)
+• Aux window 2026-03-29 04:00:00 | aux_sim = 0.1846 | cross_sim = 0.4603
+  Target window: 2026-03-30 20:00:00
+  → target post-window: dir -1,265.3 (-1.9%)
+rsi14 cross-echo bias: -1.93% | Std: 3.03% | % positive: 20.0% (high reliability)
+
+Cross-entanglement with prev_close (lag=10):
+• Aux window 2026-04-05 16:00:00 | aux_sim = -0.1527 | cross_sim = 0.7097
+  Target window: 2026-04-07 08:00:00
+  → target post-window: dir +1,275.5 (+1.8%)
+• Aux window 2026-03-23 08:00:00 | aux_sim = -0.2786 | cross_sim = 0.6361
+  Target window: 2026-03-25 00:00:00
+  → target post-window: dir -3,887.3 (-5.4%)
+• Aux window 2026-04-19 20:00:00 | aux_sim = 0.4578 | cross_sim = 0.6289
+  Target window: 2026-04-21 12:00:00
+  → target post-window: dir -1,607.1 (-2.1%)
+• Aux window 2026-04-06 12:00:00 | aux_sim = -0.3093 | cross_sim = 0.5997
+  Target window: 2026-04-08 04:00:00
+  → target post-window: dir +2,702.1 (+3.8%)
+• Aux window 2026-04-04 20:00:00 | aux_sim = 0.4207 | cross_sim = 0.5979
+  Target window: 2026-04-06 12:00:00
+  → target post-window: dir +3,717.1 (+5.4%)
+prev_close cross-echo bias: +0.64% | Std: 3.97% | % positive: 60.0% (high reliability)
+
+Cross-entanglement with true_range (lag=10):
+• Aux window 2026-03-20 20:00:00 | aux_sim = -0.1907 | cross_sim = 0.4905
+  Target window: 2026-03-22 12:00:00
+  → target post-window: dir +772.3 (+1.1%)
+• Aux window 2026-03-20 00:00:00 | aux_sim = -0.0401 | cross_sim = 0.4279
+  Target window: 2026-03-21 16:00:00
+  → target post-window: dir +2,724.7 (+4.0%)
+• Aux window 2026-03-18 08:00:00 | aux_sim = -0.0630 | cross_sim = 0.3924
+  Target window: 2026-03-20 00:00:00
+  → target post-window: dir -538.3 (-0.8%)
+• Aux window 2026-03-19 04:00:00 | aux_sim = 0.2479 | cross_sim = 0.3896
+  Target window: 2026-03-20 20:00:00
+  → target post-window: dir +2,239.3 (+3.2%)
+• Aux window 2026-03-26 16:00:00 | aux_sim = -0.1163 | cross_sim = 0.3625
+  Target window: 2026-03-28 08:00:00
+  → target post-window: dir +1,463.9 (+2.2%)
+true_range cross-echo bias: +1.92% | Std: 1.65% | % positive: 80.0% (high reliability)
+
+Cross-entanglement with atr14 (lag=10):
+• Aux window 2026-03-25 20:00:00 | aux_sim = 0.3620 | cross_sim = 0.7438
+  Target window: 2026-03-27 12:00:00
+  → target post-window: dir +688.9 (+1.0%)
+• Aux window 2026-03-23 08:00:00 | aux_sim = -0.4590 | cross_sim = 0.5395
+  Target window: 2026-03-25 00:00:00
+  → target post-window: dir -3,887.3 (-5.4%)
+• Aux window 2026-03-24 04:00:00 | aux_sim = -0.2539 | cross_sim = 0.5289
+  Target window: 2026-03-25 20:00:00
+  → target post-window: dir -1,998.2 (-2.9%)
+• Aux window 2026-05-31 12:00:00 | aux_sim = 0.7213 | cross_sim = 0.5157
+  Target window: 2026-06-02 04:00:00
+  → target post-window: dir -6,915.6 (-10.5%)
+• Aux window 2026-03-25 00:00:00 | aux_sim = -0.4038 | cross_sim = 0.5122
+  Target window: 2026-03-26 16:00:00
+  → target post-window: dir +1,575.8 (+2.4%)
+atr14 cross-echo bias: -2.78% | Std: 4.64% | % positive: 40.0% (high reliability)
+
+Cross-entanglement with vcr (lag=10):
+• Aux window 2026-05-24 00:00:00 | aux_sim = -0.2849 | cross_sim = 0.6801
+  Target window: 2026-05-25 16:00:00
+  → target post-window: dir -2,513.9 (-3.3%)
+• Aux window 2026-04-11 12:00:00 | aux_sim = 0.7283 | cross_sim = 0.6077
+  Target window: 2026-04-13 04:00:00
+  → target post-window: dir +799.4 (+1.1%)
+• Aux window 2026-05-23 04:00:00 | aux_sim = 0.3808 | cross_sim = 0.5703
+  Target window: 2026-05-24 20:00:00
+  → target post-window: dir -3,824.8 (-4.9%)
+• Aux window 2026-04-26 12:00:00 | aux_sim = 0.5549 | cross_sim = 0.5609
+  Target window: 2026-04-28 04:00:00
+  → target post-window: dir +1,308.3 (+1.7%)
+• Aux window 2026-03-29 04:00:00 | aux_sim = 0.1440 | cross_sim = 0.5565
+  Target window: 2026-03-30 20:00:00
+  → target post-window: dir -1,265.3 (-1.9%)
+vcr cross-echo bias: -1.51% | Std: 2.53% | % positive: 40.0% (high reliability)
+
+Cross-entanglement with market_energy (lag=10):
+• Aux window 2026-05-24 00:00:00 | aux_sim = -0.2849 | cross_sim = 0.6801
+  Target window: 2026-05-25 16:00:00
+  → target post-window: dir -2,513.9 (-3.3%)
+• Aux window 2026-04-11 12:00:00 | aux_sim = 0.7283 | cross_sim = 0.6077
+  Target window: 2026-04-13 04:00:00
+  → target post-window: dir +799.4 (+1.1%)
+• Aux window 2026-05-23 04:00:00 | aux_sim = 0.3808 | cross_sim = 0.5703
+  Target window: 2026-05-24 20:00:00
+  → target post-window: dir -3,824.8 (-4.9%)
+• Aux window 2026-04-26 12:00:00 | aux_sim = 0.5549 | cross_sim = 0.5609
+  Target window: 2026-04-28 04:00:00
+  → target post-window: dir +1,308.3 (+1.7%)
+• Aux window 2026-03-29 04:00:00 | aux_sim = 0.1440 | cross_sim = 0.5565
+  Target window: 2026-03-30 20:00:00
+  → target post-window: dir -1,265.3 (-1.9%)
+market_energy cross-echo bias: -1.51% | Std: 2.53% | % positive: 40.0% (high reliability)
+
+Cross-entanglement with energy_slope (lag=10):
+• Aux window 2026-03-09 04:00:00 | aux_sim = -0.2187 | cross_sim = 0.5427
+  Target window: 2026-03-10 20:00:00
+  → target post-window: dir +546.7 (+0.8%)
+• Aux window 2026-03-10 00:00:00 | aux_sim = -0.6461 | cross_sim = 0.3656
+  Target window: 2026-03-11 16:00:00
+  → target post-window: dir +1,008.7 (+1.4%)
+• Aux window 2026-03-20 00:00:00 | aux_sim = -0.1290 | cross_sim = 0.3485
+  Target window: 2026-03-21 16:00:00
+  → target post-window: dir +2,724.7 (+4.0%)
+• Aux window 2026-05-03 04:00:00 | aux_sim = -0.0015 | cross_sim = 0.3353
+  Target window: 2026-05-04 20:00:00
+  → target post-window: dir -696.0 (-0.9%)
+• Aux window 2026-04-07 08:00:00 | aux_sim = 0.5280 | cross_sim = 0.3350
+  Target window: 2026-04-09 00:00:00
+  → target post-window: dir -991.5 (-1.4%)
+energy_slope cross-echo bias: +0.82% | Std: 1.89% | % positive: 60.0% (high reliability)
+
+Cross-entanglement with compression_expansion_index (lag=10):
+• Aux window 2026-05-24 00:00:00 | aux_sim = -0.2531 | cross_sim = 0.6643
+  Target window: 2026-05-25 16:00:00
+  → target post-window: dir -2,513.9 (-3.3%)
+• Aux window 2026-05-23 04:00:00 | aux_sim = 0.1555 | cross_sim = 0.5926
+  Target window: 2026-05-24 20:00:00
+  → target post-window: dir -3,824.8 (-4.9%)
+• Aux window 2026-03-28 08:00:00 | aux_sim = -0.5324 | cross_sim = 0.5625
+  Target window: 2026-03-30 00:00:00
+  → target post-window: dir -848.4 (-1.3%)
+• Aux window 2026-04-26 12:00:00 | aux_sim = 0.6002 | cross_sim = 0.5560
+  Target window: 2026-04-28 04:00:00
+  → target post-window: dir +1,308.3 (+1.7%)
+• Aux window 2026-05-15 16:00:00 | aux_sim = -0.7756 | cross_sim = 0.5495
+  Target window: 2026-05-17 08:00:00
+  → target post-window: dir +270.4 (+0.4%)
+compression_expansion_index cross-echo bias: -1.60% | Std: 2.40% | % positive: 40.0% (high reliability)
+
+Cross-entanglement with volume_energy (lag=10):
+• Aux window 2026-03-18 08:00:00 | aux_sim = 0.1975 | cross_sim = 0.4355
+  Target window: 2026-03-20 00:00:00
+  → target post-window: dir -538.3 (-0.8%)
+• Aux window 2026-03-17 12:00:00 | aux_sim = -0.0348 | cross_sim = 0.4029
+  Target window: 2026-03-19 04:00:00
+  → target post-window: dir -2,647.2 (-3.7%)
+• Aux window 2026-03-26 16:00:00 | aux_sim = -0.2783 | cross_sim = 0.3685
+  Target window: 2026-03-28 08:00:00
+  → target post-window: dir +1,463.9 (+2.2%)
+• Aux window 2026-03-25 20:00:00 | aux_sim = -0.2039 | cross_sim = 0.3537
+  Target window: 2026-03-27 12:00:00
+  → target post-window: dir +688.9 (+1.0%)
+• Aux window 2026-04-03 04:00:00 | aux_sim = -0.1908 | cross_sim = 0.3411
+  Target window: 2026-04-04 20:00:00
+  → target post-window: dir +2,663.1 (+4.0%)
+volume_energy cross-echo bias: +0.36% | Std: 2.63% | % positive: 60.0% (high reliability)
+
+Cross-entanglement with ema14_slope (lag=10):
+• Aux window 2026-03-23 08:00:00 | aux_sim = -0.2965 | cross_sim = 0.6626
+  Target window: 2026-03-25 00:00:00
+  → target post-window: dir -3,887.3 (-5.4%)
+• Aux window 2026-04-19 20:00:00 | aux_sim = 0.3674 | cross_sim = 0.5196
+  Target window: 2026-04-21 12:00:00
+  → target post-window: dir -1,607.1 (-2.1%)
+• Aux window 2026-05-28 04:00:00 | aux_sim = 0.5744 | cross_sim = 0.4602
+  Target window: 2026-05-29 20:00:00
+  → target post-window: dir -4,422.0 (-6.0%)
+• Aux window 2026-06-03 00:00:00 | aux_sim = -0.3089 | cross_sim = 0.4450
+  Target window: 2026-06-04 16:00:00
+  → target post-window: dir +2,981.8 (+4.9%)
+• Aux window 2026-03-24 04:00:00 | aux_sim = 0.1022 | cross_sim = 0.4300
+  Target window: 2026-03-25 20:00:00
+  → target post-window: dir -1,998.2 (-2.9%)
+ema14_slope cross-echo bias: -2.58% | Std: 3.90% | % positive: 20.0% (high reliability)
+
+Cross-entanglement with energy_index (lag=10):
+• Aux window 2026-03-20 20:00:00 | aux_sim = 0.1593 | cross_sim = 0.5361
+  Target window: 2026-03-22 12:00:00
+  → target post-window: dir +772.3 (+1.1%)
+• Aux window 2026-03-18 08:00:00 | aux_sim = 0.1560 | cross_sim = 0.4884
+  Target window: 2026-03-20 00:00:00
+  → target post-window: dir -538.3 (-0.8%)
+• Aux window 2026-03-20 00:00:00 | aux_sim = 0.0853 | cross_sim = 0.4479
+  Target window: 2026-03-21 16:00:00
+  → target post-window: dir +2,724.7 (+4.0%)
+• Aux window 2026-03-21 16:00:00 | aux_sim = 0.2280 | cross_sim = 0.4349
+  Target window: 2026-03-23 08:00:00
+  → target post-window: dir -2,342.1 (-3.3%)
+• Aux window 2026-03-25 00:00:00 | aux_sim = -0.4691 | cross_sim = 0.4024
+  Target window: 2026-03-26 16:00:00
+  → target post-window: dir +1,575.8 (+2.4%)
+energy_index cross-echo bias: +0.66% | Std: 2.52% | % positive: 60.0% (high reliability)
+
+Cross-entanglement with odema14 (lag=10):
+• Aux window 2026-04-19 20:00:00 | aux_sim = 0.3133 | cross_sim = 0.6955
+  Target window: 2026-04-21 12:00:00
+  → target post-window: dir -1,607.1 (-2.1%)
+• Aux window 2026-03-23 08:00:00 | aux_sim = -0.2807 | cross_sim = 0.6309
+  Target window: 2026-03-25 00:00:00
+  → target post-window: dir -3,887.3 (-5.4%)
+• Aux window 2026-04-05 16:00:00 | aux_sim = -0.2222 | cross_sim = 0.6079
+  Target window: 2026-04-07 08:00:00
+  → target post-window: dir +1,275.5 (+1.8%)
+• Aux window 2026-04-06 12:00:00 | aux_sim = -0.2762 | cross_sim = 0.5507
+  Target window: 2026-04-08 04:00:00
+  → target post-window: dir +2,702.1 (+3.8%)
+• Aux window 2026-03-24 04:00:00 | aux_sim = 0.0555 | cross_sim = 0.5398
+  Target window: 2026-03-25 20:00:00
+  → target post-window: dir -1,998.2 (-2.9%)
+odema14 cross-echo bias: -1.08% | Std: 3.33% | % positive: 40.0% (high reliability)
+
+Cross-entanglement with odema50 (lag=10):
+• Aux window 2026-04-05 16:00:00 | aux_sim = -0.1655 | cross_sim = 0.6771
+  Target window: 2026-04-07 08:00:00
+  → target post-window: dir +1,275.5 (+1.8%)
+• Aux window 2026-04-19 20:00:00 | aux_sim = 0.4127 | cross_sim = 0.6532
+  Target window: 2026-04-21 12:00:00
+  → target post-window: dir -1,607.1 (-2.1%)
+• Aux window 2026-03-23 08:00:00 | aux_sim = -0.2788 | cross_sim = 0.6509
+  Target window: 2026-03-25 00:00:00
+  → target post-window: dir -3,887.3 (-5.4%)
+• Aux window 2026-04-06 12:00:00 | aux_sim = -0.3139 | cross_sim = 0.5958
+  Target window: 2026-04-08 04:00:00
+  → target post-window: dir +2,702.1 (+3.8%)
+• Aux window 2026-04-04 20:00:00 | aux_sim = 0.3909 | cross_sim = 0.5800
+  Target window: 2026-04-06 12:00:00
+  → target post-window: dir +3,717.1 (+5.4%)
+odema50 cross-echo bias: +0.55% | Std: 3.97% | % positive: 60.0% (high reliability)
+
+Cross-entanglement with odema200 (lag=10):
+• Aux window 2026-04-05 16:00:00 | aux_sim = -0.1546 | cross_sim = 0.7010
+  Target window: 2026-04-07 08:00:00
+  → target post-window: dir +1,275.5 (+1.8%)
+• Aux window 2026-03-23 08:00:00 | aux_sim = -0.2767 | cross_sim = 0.6404
+  Target window: 2026-03-25 00:00:00
+  → target post-window: dir -3,887.3 (-5.4%)
+• Aux window 2026-04-19 20:00:00 | aux_sim = 0.4430 | cross_sim = 0.6363
+  Target window: 2026-04-21 12:00:00
+  → target post-window: dir -1,607.1 (-2.1%)
+• Aux window 2026-04-06 12:00:00 | aux_sim = -0.3149 | cross_sim = 0.5999
+  Target window: 2026-04-08 04:00:00
+  → target post-window: dir +2,702.1 (+3.8%)
+• Aux window 2026-04-04 20:00:00 | aux_sim = 0.4077 | cross_sim = 0.5926
+  Target window: 2026-04-06 12:00:00
+  → target post-window: dir +3,717.1 (+5.4%)
+odema200 cross-echo bias: +0.62% | Std: 3.97% | % positive: 60.0% (high reliability)
+
+Cross-entanglement with hdema14 (lag=10):
+• Aux window 2026-04-19 20:00:00 | aux_sim = 0.2789 | cross_sim = 0.6182
+  Target window: 2026-04-21 12:00:00
+  → target post-window: dir -1,607.1 (-2.1%)
+• Aux window 2026-05-28 04:00:00 | aux_sim = 0.5437 | cross_sim = 0.5230
+  Target window: 2026-05-29 20:00:00
+  → target post-window: dir -4,422.0 (-6.0%)
+• Aux window 2026-03-23 08:00:00 | aux_sim = -0.4447 | cross_sim = 0.5130
+  Target window: 2026-03-25 00:00:00
+  → target post-window: dir -3,887.3 (-5.4%)
+• Aux window 2026-03-28 08:00:00 | aux_sim = -0.2815 | cross_sim = 0.4945
+  Target window: 2026-03-30 00:00:00
+  → target post-window: dir -848.4 (-1.3%)
+• Aux window 2026-03-29 04:00:00 | aux_sim = 0.2592 | cross_sim = 0.4744
+  Target window: 2026-03-30 20:00:00
+  → target post-window: dir -1,265.3 (-1.9%)
+hdema14 cross-echo bias: -3.32% | Std: 1.98% | % positive: 0.0% (high reliability)
+
+Cross-entanglement with hdema50 (lag=10):
+• Aux window 2026-03-23 08:00:00 | aux_sim = -0.4248 | cross_sim = 0.6040
+  Target window: 2026-03-25 00:00:00
+  → target post-window: dir -3,887.3 (-5.4%)
+• Aux window 2026-04-19 20:00:00 | aux_sim = 0.3097 | cross_sim = 0.5825
+  Target window: 2026-04-21 12:00:00
+  → target post-window: dir -1,607.1 (-2.1%)
+• Aux window 2026-03-29 04:00:00 | aux_sim = 0.3254 | cross_sim = 0.5352
+  Target window: 2026-03-30 20:00:00
+  → target post-window: dir -1,265.3 (-1.9%)
+• Aux window 2026-04-06 12:00:00 | aux_sim = -0.3721 | cross_sim = 0.4827
+  Target window: 2026-04-08 04:00:00
+  → target post-window: dir +2,702.1 (+3.8%)
+• Aux window 2026-03-24 04:00:00 | aux_sim = 0.0695 | cross_sim = 0.4755
+  Target window: 2026-03-25 20:00:00
+  → target post-window: dir -1,998.2 (-2.9%)
+hdema50 cross-echo bias: -1.88% | Std: 3.03% | % positive: 20.0% (high reliability)
+
+Cross-entanglement with hdema200 (lag=10):
+• Aux window 2026-03-23 08:00:00 | aux_sim = -0.4298 | cross_sim = 0.6157
+  Target window: 2026-03-25 00:00:00
+  → target post-window: dir -3,887.3 (-5.4%)
+• Aux window 2026-04-19 20:00:00 | aux_sim = 0.3300 | cross_sim = 0.5662
+  Target window: 2026-04-21 12:00:00
+  → target post-window: dir -1,607.1 (-2.1%)
+• Aux window 2026-03-29 04:00:00 | aux_sim = 0.3485 | cross_sim = 0.5446
+  Target window: 2026-03-30 20:00:00
+  → target post-window: dir -1,265.3 (-1.9%)
+• Aux window 2026-04-06 12:00:00 | aux_sim = -0.3669 | cross_sim = 0.4962
+  Target window: 2026-04-08 04:00:00
+  → target post-window: dir +2,702.1 (+3.8%)
+• Aux window 2026-03-24 04:00:00 | aux_sim = 0.0756 | cross_sim = 0.4721
+  Target window: 2026-03-25 20:00:00
+  → target post-window: dir -1,998.2 (-2.9%)
+hdema200 cross-echo bias: -1.86% | Std: 3.03% | % positive: 20.0% (high reliability)
+
+Cross-entanglement with ldema14 (lag=10):
+• Aux window 2026-04-19 20:00:00 | aux_sim = 0.5295 | cross_sim = 0.7131
+  Target window: 2026-04-21 12:00:00
+  → target post-window: dir -1,607.1 (-2.1%)
+• Aux window 2026-03-23 08:00:00 | aux_sim = -0.5333 | cross_sim = 0.6818
+  Target window: 2026-03-25 00:00:00
+  → target post-window: dir -3,887.3 (-5.4%)
+• Aux window 2026-04-14 20:00:00 | aux_sim = 0.3535 | cross_sim = 0.5509
+  Target window: 2026-04-16 12:00:00
+  → target post-window: dir -3,139.5 (-4.2%)
+• Aux window 2026-04-19 00:00:00 | aux_sim = -0.3193 | cross_sim = 0.5323
+  Target window: 2026-04-20 16:00:00
+  → target post-window: dir +2,629.1 (+3.5%)
+• Aux window 2026-04-05 16:00:00 | aux_sim = -0.1983 | cross_sim = 0.5018
+  Target window: 2026-04-07 08:00:00
+  → target post-window: dir +1,275.5 (+1.8%)
+ldema14 cross-echo bias: -1.59% | Std: 3.41% | % positive: 40.0% (high reliability)
+
+Cross-entanglement with ldema50 (lag=10):
+• Aux window 2026-03-23 08:00:00 | aux_sim = -0.4900 | cross_sim = 0.7087
+  Target window: 2026-03-25 00:00:00
+  → target post-window: dir -3,887.3 (-5.4%)
+• Aux window 2026-04-19 20:00:00 | aux_sim = 0.5676 | cross_sim = 0.6635
+  Target window: 2026-04-21 12:00:00
+  → target post-window: dir -1,607.1 (-2.1%)
+• Aux window 2026-04-05 16:00:00 | aux_sim = -0.1729 | cross_sim = 0.6099
+  Target window: 2026-04-07 08:00:00
+  → target post-window: dir +1,275.5 (+1.8%)
+• Aux window 2026-04-06 12:00:00 | aux_sim = -0.1785 | cross_sim = 0.5623
+  Target window: 2026-04-08 04:00:00
+  → target post-window: dir +2,702.1 (+3.8%)
+• Aux window 2026-04-04 20:00:00 | aux_sim = 0.4515 | cross_sim = 0.5168
+  Target window: 2026-04-06 12:00:00
+  → target post-window: dir +3,717.1 (+5.4%)
+ldema50 cross-echo bias: +0.27% | Std: 3.97% | % positive: 60.0% (high reliability)
+
+Cross-entanglement with ldema200 (lag=10):
+• Aux window 2026-03-23 08:00:00 | aux_sim = -0.4801 | cross_sim = 0.7015
+  Target window: 2026-03-25 00:00:00
+  → target post-window: dir -3,887.3 (-5.4%)
+• Aux window 2026-04-19 20:00:00 | aux_sim = 0.5852 | cross_sim = 0.6489
+  Target window: 2026-04-21 12:00:00
+  → target post-window: dir -1,607.1 (-2.1%)
+• Aux window 2026-04-05 16:00:00 | aux_sim = -0.1673 | cross_sim = 0.6453
+  Target window: 2026-04-07 08:00:00
+  → target post-window: dir +1,275.5 (+1.8%)
+• Aux window 2026-04-06 12:00:00 | aux_sim = -0.1814 | cross_sim = 0.5712
+  Target window: 2026-04-08 04:00:00
+  → target post-window: dir +2,702.1 (+3.8%)
+• Aux window 2026-04-04 20:00:00 | aux_sim = 0.4626 | cross_sim = 0.5391
+  Target window: 2026-04-06 12:00:00
+  → target post-window: dir +3,717.1 (+5.4%)
+ldema200 cross-echo bias: +0.35% | Std: 3.97% | % positive: 60.0% (high reliability)
+
+Cross-entanglement with cdema14 (lag=10):
+• Aux window 2026-03-23 08:00:00 | aux_sim = -0.2965 | cross_sim = 0.6626
+  Target window: 2026-03-25 00:00:00
+  → target post-window: dir -3,887.3 (-5.4%)
+• Aux window 2026-04-19 20:00:00 | aux_sim = 0.3674 | cross_sim = 0.5196
+  Target window: 2026-04-21 12:00:00
+  → target post-window: dir -1,607.1 (-2.1%)
+• Aux window 2026-05-28 04:00:00 | aux_sim = 0.5744 | cross_sim = 0.4602
+  Target window: 2026-05-29 20:00:00
+  → target post-window: dir -4,422.0 (-6.0%)
+• Aux window 2026-06-03 00:00:00 | aux_sim = -0.3089 | cross_sim = 0.4450
+  Target window: 2026-06-04 16:00:00
+  → target post-window: dir +2,981.8 (+4.9%)
+• Aux window 2026-03-24 04:00:00 | aux_sim = 0.1022 | cross_sim = 0.4300
+  Target window: 2026-03-25 20:00:00
+  → target post-window: dir -1,998.2 (-2.9%)
+cdema14 cross-echo bias: -2.58% | Std: 3.90% | % positive: 20.0% (high reliability)
+
+Cross-entanglement with cdema50 (lag=10):
+• Aux window 2026-03-23 08:00:00 | aux_sim = -0.2673 | cross_sim = 0.7241
+  Target window: 2026-03-25 00:00:00
+  → target post-window: dir -3,887.3 (-5.4%)
+• Aux window 2026-04-19 20:00:00 | aux_sim = 0.3693 | cross_sim = 0.5187
+  Target window: 2026-04-21 12:00:00
+  → target post-window: dir -1,607.1 (-2.1%)
+• Aux window 2026-04-06 12:00:00 | aux_sim = -0.3248 | cross_sim = 0.4912
+  Target window: 2026-04-08 04:00:00
+  → target post-window: dir +2,702.1 (+3.8%)
+• Aux window 2026-03-24 04:00:00 | aux_sim = 0.1109 | cross_sim = 0.4829
+  Target window: 2026-03-25 20:00:00
+  → target post-window: dir -1,998.2 (-2.9%)
+• Aux window 2026-03-29 04:00:00 | aux_sim = 0.1776 | cross_sim = 0.4569
+  Target window: 2026-03-30 20:00:00
+  → target post-window: dir -1,265.3 (-1.9%)
+cdema50 cross-echo bias: -2.02% | Std: 3.03% | % positive: 20.0% (high reliability)
+
+Cross-entanglement with cdema200 (lag=10):
+• Aux window 2026-03-23 08:00:00 | aux_sim = -0.2695 | cross_sim = 0.7274
+  Target window: 2026-03-25 00:00:00
+  → target post-window: dir -3,887.3 (-5.4%)
+• Aux window 2026-04-19 20:00:00 | aux_sim = 0.3765 | cross_sim = 0.5123
+  Target window: 2026-04-21 12:00:00
+  → target post-window: dir -1,607.1 (-2.1%)
+• Aux window 2026-04-06 12:00:00 | aux_sim = -0.3223 | cross_sim = 0.5059
+  Target window: 2026-04-08 04:00:00
+  → target post-window: dir +2,702.1 (+3.8%)
+• Aux window 2026-03-24 04:00:00 | aux_sim = 0.1101 | cross_sim = 0.4806
+  Target window: 2026-03-25 20:00:00
+  → target post-window: dir -1,998.2 (-2.9%)
+• Aux window 2026-03-29 04:00:00 | aux_sim = 0.1918 | cross_sim = 0.4678
+  Target window: 2026-03-30 20:00:00
+  → target post-window: dir -1,265.3 (-1.9%)
+cdema200 cross-echo bias: -1.99% | Std: 3.03% | % positive: 20.0% (high reliability)
+
+Multi-event structural forecast:
+Self-history bias: -0.91% (high reliability)
+ - open forecast signal: bias +0.64% (high reliability, 60.0% positive)
+ - high forecast signal: bias -1.86% (high reliability, 20.0% positive)
+ - low forecast signal: bias +0.38% (high reliability, 60.0% positive)
+ - green forecast signal: bias +1.59% (high reliability, 80.0% positive)
+ - red forecast signal: bias +0.23% (high reliability, 40.0% positive)
+ - ema14 forecast signal: bias +3.43% (high reliability, 100.0% positive)
+ - ema50 forecast signal: bias +1.39% (high reliability, 60.0% positive)
+ - ema200 forecast signal: bias +1.26% (high reliability, 60.0% positive)
+ - obv forecast signal: bias -0.94% (high reliability, 40.0% positive)
+ - rsi14 forecast signal: bias -1.93% (high reliability, 20.0% positive)
+ - prev_close forecast signal: bias +0.64% (high reliability, 60.0% positive)
+ - true_range forecast signal: bias +1.92% (high reliability, 80.0% positive)
+ - atr14 forecast signal: bias -2.78% (high reliability, 40.0% positive)
+ - vcr forecast signal: bias -1.51% (high reliability, 40.0% positive)
+ - market_energy forecast signal: bias -1.51% (high reliability, 40.0% positive)
+ - energy_slope forecast signal: bias +0.82% (high reliability, 60.0% positive)
+ - compression_expansion_index forecast signal: bias -1.60% (high reliability, 40.0% positive)
+ - volume_energy forecast signal: bias +0.36% (high reliability, 60.0% positive)
+ - ema14_slope forecast signal: bias -2.58% (high reliability, 20.0% positive)
+ - energy_index forecast signal: bias +0.66% (high reliability, 60.0% positive)
+ - odema14 forecast signal: bias -1.08% (high reliability, 40.0% positive)
+ - odema50 forecast signal: bias +0.55% (high reliability, 60.0% positive)
+ - odema200 forecast signal: bias +0.62% (high reliability, 60.0% positive)
+ - hdema14 forecast signal: bias -3.32% (high reliability, 0.0% positive)
+ - hdema50 forecast signal: bias -1.88% (high reliability, 20.0% positive)
+ - hdema200 forecast signal: bias -1.86% (high reliability, 20.0% positive)
+ - ldema14 forecast signal: bias -1.59% (high reliability, 40.0% positive)
+ - ldema50 forecast signal: bias +0.27% (high reliability, 60.0% positive)
+ - ldema200 forecast signal: bias +0.35% (high reliability, 60.0% positive)
+ - cdema14 forecast signal: bias -2.58% (high reliability, 20.0% positive)
+ - cdema50 forecast signal: bias -2.02% (high reliability, 20.0% positive)
+ - cdema200 forecast signal: bias -1.99% (high reliability, 20.0% positive)
+
+============================================================
+STRUCTURAL EVENT MAPPING (SEM) - QUANTITATIVE FORECAST
+============================================================
+
+SEM based on Self-Entanglement (pure BTC structure):
+
+========== Structural Event Mapping (SEM) Forecast (window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=similarity)
+
+Horizon 5 days:
+  Expected log return : -0.27%
+  Expected price      : 65,575.5
+  1-std confidence band: [64,661.3 — 66,502.6]
+  Std dev of returns   : 1.40%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : -0.32%
+  Expected price      : 65,544.9
+  1-std confidence band: [64,401.1 — 66,708.9]
+  Std dev of returns   : 1.76%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : -0.77%
+  Expected price      : 65,245.2
+  1-std confidence band: [63,057.4 — 67,508.8]
+  Std dev of returns   : 3.41%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : -1.04%
+  Expected price      : 65,071.6
+  1-std confidence band: [61,977.5 — 68,320.1]
+  Std dev of returns   : 4.87%
+  % positive analogs   : 48.7%
+
+SEM conditioned on open leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : +0.44%
+  Expected price      : 66,044.4
+  1-std confidence band: [64,651.1 — 67,467.7]
+  Std dev of returns   : 2.13%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : +0.87%
+  Expected price      : 66,325.6
+  1-std confidence band: [64,960.3 — 67,719.5]
+  Std dev of returns   : 2.08%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : +0.53%
+  Expected price      : 66,103.0
+  1-std confidence band: [63,462.6 — 68,853.4]
+  Std dev of returns   : 4.08%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : +0.41%
+  Expected price      : 66,021.4
+  1-std confidence band: [63,065.6 — 69,115.6]
+  Std dev of returns   : 4.58%
+  % positive analogs   : 48.7%
+
+SEM conditioned on high leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : +0.27%
+  Expected price      : 65,931.8
+  1-std confidence band: [64,635.1 — 67,254.5]
+  Std dev of returns   : 1.99%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : +0.48%
+  Expected price      : 66,068.4
+  1-std confidence band: [64,581.1 — 67,589.9]
+  Std dev of returns   : 2.28%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : -0.09%
+  Expected price      : 65,690.7
+  1-std confidence band: [63,107.2 — 68,380.0]
+  Std dev of returns   : 4.01%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : -0.67%
+  Expected price      : 65,311.2
+  1-std confidence band: [62,494.4 — 68,255.0]
+  Std dev of returns   : 4.41%
+  % positive analogs   : 48.7%
+
+SEM conditioned on low leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : +0.33%
+  Expected price      : 65,969.6
+  1-std confidence band: [64,630.9 — 67,336.0]
+  Std dev of returns   : 2.05%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : +0.70%
+  Expected price      : 66,215.2
+  1-std confidence band: [64,756.7 — 67,706.5]
+  Std dev of returns   : 2.23%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : +0.19%
+  Expected price      : 65,874.7
+  1-std confidence band: [63,165.1 — 68,700.6]
+  Std dev of returns   : 4.20%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : -0.04%
+  Expected price      : 65,726.1
+  1-std confidence band: [62,726.8 — 68,868.7]
+  Std dev of returns   : 4.67%
+  % positive analogs   : 48.7%
+
+SEM conditioned on green leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : -0.07%
+  Expected price      : 65,707.8
+  1-std confidence band: [64,600.0 — 66,834.5]
+  Std dev of returns   : 1.70%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : -0.07%
+  Expected price      : 65,706.1
+  1-std confidence band: [64,079.4 — 67,374.1]
+  Std dev of returns   : 2.51%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : -0.36%
+  Expected price      : 65,517.2
+  1-std confidence band: [63,006.4 — 68,128.2]
+  Std dev of returns   : 3.91%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : -0.33%
+  Expected price      : 65,536.6
+  1-std confidence band: [62,327.1 — 68,911.5]
+  Std dev of returns   : 5.02%
+  % positive analogs   : 48.7%
+
+SEM conditioned on red leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : -0.14%
+  Expected price      : 65,658.4
+  1-std confidence band: [64,269.6 — 67,077.1]
+  Std dev of returns   : 2.14%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : -0.10%
+  Expected price      : 65,687.1
+  1-std confidence band: [63,869.2 — 67,556.8]
+  Std dev of returns   : 2.81%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : +0.13%
+  Expected price      : 65,839.1
+  1-std confidence band: [63,372.8 — 68,401.3]
+  Std dev of returns   : 3.82%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : +0.35%
+  Expected price      : 65,983.9
+  1-std confidence band: [63,048.5 — 69,055.9]
+  Std dev of returns   : 4.55%
+  % positive analogs   : 48.7%
+
+SEM conditioned on ema14 leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : +0.39%
+  Expected price      : 66,011.9
+  1-std confidence band: [64,394.0 — 67,670.4]
+  Std dev of returns   : 2.48%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : +0.82%
+  Expected price      : 66,294.5
+  1-std confidence band: [64,877.3 — 67,742.6]
+  Std dev of returns   : 2.16%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : +1.37%
+  Expected price      : 66,657.8
+  1-std confidence band: [64,354.8 — 69,043.3]
+  Std dev of returns   : 3.52%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : +1.72%
+  Expected price      : 66,892.9
+  1-std confidence band: [64,206.7 — 69,691.6]
+  Std dev of returns   : 4.10%
+  % positive analogs   : 48.7%
+
+SEM conditioned on ema50 leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : +0.41%
+  Expected price      : 66,024.3
+  1-std confidence band: [64,459.0 — 67,627.6]
+  Std dev of returns   : 2.40%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : +0.65%
+  Expected price      : 66,179.2
+  1-std confidence band: [64,878.8 — 67,505.6]
+  Std dev of returns   : 1.98%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : +1.10%
+  Expected price      : 66,479.8
+  1-std confidence band: [64,455.4 — 68,567.9]
+  Std dev of returns   : 3.09%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : +1.38%
+  Expected price      : 66,667.1
+  1-std confidence band: [64,038.8 — 69,403.2]
+  Std dev of returns   : 4.02%
+  % positive analogs   : 48.7%
+
+SEM conditioned on ema200 leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : +0.48%
+  Expected price      : 66,066.7
+  1-std confidence band: [64,545.8 — 67,623.5]
+  Std dev of returns   : 2.33%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : +0.51%
+  Expected price      : 66,087.3
+  1-std confidence band: [64,805.0 — 67,395.1]
+  Std dev of returns   : 1.96%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : +0.88%
+  Expected price      : 66,334.9
+  1-std confidence band: [64,333.0 — 68,399.1]
+  Std dev of returns   : 3.06%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : +0.93%
+  Expected price      : 66,366.3
+  1-std confidence band: [63,711.3 — 69,131.9]
+  Std dev of returns   : 4.08%
+  % positive analogs   : 48.7%
+
+SEM conditioned on obv leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : +0.49%
+  Expected price      : 66,074.4
+  1-std confidence band: [64,752.0 — 67,423.9]
+  Std dev of returns   : 2.02%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : +0.78%
+  Expected price      : 66,263.9
+  1-std confidence band: [64,811.8 — 67,748.5]
+  Std dev of returns   : 2.22%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : -0.32%
+  Expected price      : 65,541.6
+  1-std confidence band: [62,480.5 — 68,752.7]
+  Std dev of returns   : 4.78%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : -0.45%
+  Expected price      : 65,455.9
+  1-std confidence band: [62,517.9 — 68,532.0]
+  Std dev of returns   : 4.59%
+  % positive analogs   : 48.7%
+
+SEM conditioned on rsi14 leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : +0.16%
+  Expected price      : 65,858.5
+  1-std confidence band: [64,635.1 — 67,105.0]
+  Std dev of returns   : 1.88%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : +0.22%
+  Expected price      : 65,894.2
+  1-std confidence band: [64,314.9 — 67,512.3]
+  Std dev of returns   : 2.43%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : -1.16%
+  Expected price      : 64,996.6
+  1-std confidence band: [62,021.4 — 68,114.5]
+  Std dev of returns   : 4.69%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : -1.48%
+  Expected price      : 64,787.2
+  1-std confidence band: [61,650.9 — 68,083.0]
+  Std dev of returns   : 4.96%
+  % positive analogs   : 48.7%
+
+SEM conditioned on prev_close leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : +0.44%
+  Expected price      : 66,043.9
+  1-std confidence band: [64,649.7 — 67,468.1]
+  Std dev of returns   : 2.13%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : +0.87%
+  Expected price      : 66,326.2
+  1-std confidence band: [64,962.1 — 67,718.9]
+  Std dev of returns   : 2.08%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : +0.54%
+  Expected price      : 66,106.2
+  1-std confidence band: [63,468.4 — 68,853.6]
+  Std dev of returns   : 4.07%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : +0.41%
+  Expected price      : 66,023.9
+  1-std confidence band: [63,068.2 — 69,118.0]
+  Std dev of returns   : 4.58%
+  % positive analogs   : 48.7%
+
+SEM conditioned on true_range leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : -0.40%
+  Expected price      : 65,492.8
+  1-std confidence band: [64,290.7 — 66,717.3]
+  Std dev of returns   : 1.85%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : -0.39%
+  Expected price      : 65,493.2
+  1-std confidence band: [63,896.5 — 67,129.9]
+  Std dev of returns   : 2.47%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : -0.15%
+  Expected price      : 65,651.8
+  1-std confidence band: [63,662.6 — 67,703.1]
+  Std dev of returns   : 3.08%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : -0.39%
+  Expected price      : 65,498.1
+  1-std confidence band: [62,980.0 — 68,116.8]
+  Std dev of returns   : 3.92%
+  % positive analogs   : 48.7%
+
+SEM conditioned on atr14 leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : -0.86%
+  Expected price      : 65,191.0
+  1-std confidence band: [63,797.0 — 66,615.5]
+  Std dev of returns   : 2.16%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : -1.34%
+  Expected price      : 64,879.8
+  1-std confidence band: [62,818.3 — 67,008.9]
+  Std dev of returns   : 3.23%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : -1.96%
+  Expected price      : 64,473.9
+  1-std confidence band: [61,526.6 — 67,562.4]
+  Std dev of returns   : 4.68%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : -1.77%
+  Expected price      : 64,599.4
+  1-std confidence band: [61,179.6 — 68,210.4]
+  Std dev of returns   : 5.44%
+  % positive analogs   : 48.7%
+
+SEM conditioned on vcr leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : +0.00%
+  Expected price      : 65,754.6
+  1-std confidence band: [64,561.6 — 66,969.6]
+  Std dev of returns   : 1.83%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : +0.14%
+  Expected price      : 65,841.9
+  1-std confidence band: [64,109.0 — 67,621.6]
+  Std dev of returns   : 2.67%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : -0.41%
+  Expected price      : 65,482.6
+  1-std confidence band: [62,965.5 — 68,100.3]
+  Std dev of returns   : 3.92%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : -0.42%
+  Expected price      : 65,474.7
+  1-std confidence band: [62,487.9 — 68,604.3]
+  Std dev of returns   : 4.67%
+  % positive analogs   : 48.7%
+
+SEM conditioned on market_energy leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : +0.00%
+  Expected price      : 65,754.6
+  1-std confidence band: [64,561.6 — 66,969.6]
+  Std dev of returns   : 1.83%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : +0.14%
+  Expected price      : 65,841.9
+  1-std confidence band: [64,109.0 — 67,621.6]
+  Std dev of returns   : 2.67%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : -0.41%
+  Expected price      : 65,482.6
+  1-std confidence band: [62,965.5 — 68,100.3]
+  Std dev of returns   : 3.92%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : -0.42%
+  Expected price      : 65,474.7
+  1-std confidence band: [62,487.9 — 68,604.3]
+  Std dev of returns   : 4.67%
+  % positive analogs   : 48.7%
+
+SEM conditioned on energy_slope leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : -0.17%
+  Expected price      : 65,641.8
+  1-std confidence band: [64,456.1 — 66,849.3]
+  Std dev of returns   : 1.82%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : -0.13%
+  Expected price      : 65,665.2
+  1-std confidence band: [64,023.2 — 67,349.4]
+  Std dev of returns   : 2.53%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : +0.02%
+  Expected price      : 65,765.2
+  1-std confidence band: [63,448.0 — 68,167.1]
+  Std dev of returns   : 3.59%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : +0.01%
+  Expected price      : 65,760.7
+  1-std confidence band: [63,155.6 — 68,473.2]
+  Std dev of returns   : 4.04%
+  % positive analogs   : 48.7%
+
+SEM conditioned on compression_expansion_index leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : -0.24%
+  Expected price      : 65,592.9
+  1-std confidence band: [64,314.5 — 66,896.8]
+  Std dev of returns   : 1.97%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : -0.42%
+  Expected price      : 65,477.1
+  1-std confidence band: [63,511.7 — 67,503.3]
+  Std dev of returns   : 3.05%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : -1.18%
+  Expected price      : 64,979.0
+  1-std confidence band: [62,074.7 — 68,019.2]
+  Std dev of returns   : 4.57%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : -1.21%
+  Expected price      : 64,963.3
+  1-std confidence band: [61,759.3 — 68,333.5]
+  Std dev of returns   : 5.06%
+  % positive analogs   : 48.7%
+
+SEM conditioned on volume_energy leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : -0.44%
+  Expected price      : 65,463.2
+  1-std confidence band: [64,183.2 — 66,768.8]
+  Std dev of returns   : 1.97%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : -0.57%
+  Expected price      : 65,380.5
+  1-std confidence band: [63,544.1 — 67,270.0]
+  Std dev of returns   : 2.85%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : -0.64%
+  Expected price      : 65,334.5
+  1-std confidence band: [62,835.6 — 67,932.8]
+  Std dev of returns   : 3.90%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : -0.36%
+  Expected price      : 65,517.1
+  1-std confidence band: [62,441.6 — 68,744.2]
+  Std dev of returns   : 4.81%
+  % positive analogs   : 48.7%
+
+SEM conditioned on ema14_slope leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : +0.07%
+  Expected price      : 65,798.9
+  1-std confidence band: [64,658.2 — 66,959.7]
+  Std dev of returns   : 1.75%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : +0.03%
+  Expected price      : 65,774.3
+  1-std confidence band: [64,175.6 — 67,412.7]
+  Std dev of returns   : 2.46%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : -1.39%
+  Expected price      : 64,842.4
+  1-std confidence band: [61,997.5 — 67,817.8]
+  Std dev of returns   : 4.49%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : -2.04%
+  Expected price      : 64,423.4
+  1-std confidence band: [61,194.2 — 67,823.0]
+  Std dev of returns   : 5.14%
+  % positive analogs   : 48.7%
+
+SEM conditioned on energy_index leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : -0.35%
+  Expected price      : 65,521.9
+  1-std confidence band: [64,135.3 — 66,938.5]
+  Std dev of returns   : 2.14%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : -0.52%
+  Expected price      : 65,411.1
+  1-std confidence band: [63,390.3 — 67,496.3]
+  Std dev of returns   : 3.14%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : -0.60%
+  Expected price      : 65,356.4
+  1-std confidence band: [62,656.0 — 68,173.1]
+  Std dev of returns   : 4.22%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : -1.03%
+  Expected price      : 65,080.4
+  1-std confidence band: [61,967.9 — 68,349.2]
+  Std dev of returns   : 4.90%
+  % positive analogs   : 48.7%
+
+SEM conditioned on odema14 leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : +0.40%
+  Expected price      : 66,018.2
+  1-std confidence band: [64,750.8 — 67,310.4]
+  Std dev of returns   : 1.94%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : +0.70%
+  Expected price      : 66,216.0
+  1-std confidence band: [64,840.7 — 67,620.5]
+  Std dev of returns   : 2.10%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : +0.08%
+  Expected price      : 65,806.5
+  1-std confidence band: [63,184.0 — 68,537.9]
+  Std dev of returns   : 4.07%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : -0.36%
+  Expected price      : 65,515.3
+  1-std confidence band: [62,414.7 — 68,770.1]
+  Std dev of returns   : 4.85%
+  % positive analogs   : 48.7%
+
+SEM conditioned on odema50 leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : +0.44%
+  Expected price      : 66,044.9
+  1-std confidence band: [64,689.5 — 67,428.7]
+  Std dev of returns   : 2.07%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : +0.81%
+  Expected price      : 66,285.7
+  1-std confidence band: [64,902.5 — 67,698.4]
+  Std dev of returns   : 2.11%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : +0.34%
+  Expected price      : 65,976.6
+  1-std confidence band: [63,291.9 — 68,775.1]
+  Std dev of returns   : 4.15%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : +0.14%
+  Expected price      : 65,844.5
+  1-std confidence band: [62,835.5 — 68,997.7]
+  Std dev of returns   : 4.68%
+  % positive analogs   : 48.7%
+
+SEM conditioned on odema200 leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : +0.44%
+  Expected price      : 66,045.2
+  1-std confidence band: [64,658.9 — 67,461.1]
+  Std dev of returns   : 2.12%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : +0.86%
+  Expected price      : 66,317.1
+  1-std confidence band: [64,944.9 — 67,718.2]
+  Std dev of returns   : 2.09%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : +0.49%
+  Expected price      : 66,076.0
+  1-std confidence band: [63,426.4 — 68,836.4]
+  Std dev of returns   : 4.09%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : +0.36%
+  Expected price      : 65,986.0
+  1-std confidence band: [63,025.4 — 69,085.6]
+  Std dev of returns   : 4.59%
+  % positive analogs   : 48.7%
+
+SEM conditioned on hdema14 leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : +0.20%
+  Expected price      : 65,882.7
+  1-std confidence band: [64,706.7 — 67,080.1]
+  Std dev of returns   : 1.80%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : +0.32%
+  Expected price      : 65,962.5
+  1-std confidence band: [64,422.0 — 67,539.8]
+  Std dev of returns   : 2.36%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : -0.26%
+  Expected price      : 65,579.2
+  1-std confidence band: [63,207.4 — 68,039.9]
+  Std dev of returns   : 3.68%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : -1.22%
+  Expected price      : 64,956.2
+  1-std confidence band: [62,035.6 — 68,014.4]
+  Std dev of returns   : 4.60%
+  % positive analogs   : 48.7%
+
+SEM conditioned on hdema50 leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : +0.24%
+  Expected price      : 65,907.7
+  1-std confidence band: [64,634.9 — 67,205.5]
+  Std dev of returns   : 1.95%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : +0.41%
+  Expected price      : 66,021.8
+  1-std confidence band: [64,501.3 — 67,578.1]
+  Std dev of returns   : 2.33%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : -0.19%
+  Expected price      : 65,623.9
+  1-std confidence band: [63,075.9 — 68,274.9]
+  Std dev of returns   : 3.96%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : -0.85%
+  Expected price      : 65,193.4
+  1-std confidence band: [62,368.1 — 68,146.6]
+  Std dev of returns   : 4.43%
+  % positive analogs   : 48.7%
+
+SEM conditioned on hdema200 leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : +0.26%
+  Expected price      : 65,920.8
+  1-std confidence band: [64,623.6 — 67,244.1]
+  Std dev of returns   : 1.99%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : +0.46%
+  Expected price      : 66,052.1
+  1-std confidence band: [64,549.7 — 67,589.4]
+  Std dev of returns   : 2.30%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : -0.12%
+  Expected price      : 65,675.9
+  1-std confidence band: [63,102.7 — 68,354.0]
+  Std dev of returns   : 4.00%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : -0.71%
+  Expected price      : 65,289.4
+  1-std confidence band: [62,480.9 — 68,224.1]
+  Std dev of returns   : 4.40%
+  % positive analogs   : 48.7%
+
+SEM conditioned on ldema14 leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : +0.28%
+  Expected price      : 65,933.1
+  1-std confidence band: [64,731.6 — 67,156.9]
+  Std dev of returns   : 1.84%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : +0.55%
+  Expected price      : 66,114.5
+  1-std confidence band: [64,627.8 — 67,635.4]
+  Std dev of returns   : 2.27%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : -0.24%
+  Expected price      : 65,593.8
+  1-std confidence band: [62,958.0 — 68,339.9]
+  Std dev of returns   : 4.10%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : -0.74%
+  Expected price      : 65,264.5
+  1-std confidence band: [62,230.6 — 68,446.2]
+  Std dev of returns   : 4.76%
+  % positive analogs   : 48.7%
+
+SEM conditioned on ldema50 leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : +0.32%
+  Expected price      : 65,960.2
+  1-std confidence band: [64,659.5 — 67,287.1]
+  Std dev of returns   : 1.99%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : +0.63%
+  Expected price      : 66,168.2
+  1-std confidence band: [64,684.3 — 67,686.0]
+  Std dev of returns   : 2.27%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : -0.02%
+  Expected price      : 65,738.0
+  1-std confidence band: [63,004.9 — 68,589.6]
+  Std dev of returns   : 4.25%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : -0.32%
+  Expected price      : 65,540.5
+  1-std confidence band: [62,519.2 — 68,707.7]
+  Std dev of returns   : 4.72%
+  % positive analogs   : 48.7%
+
+SEM conditioned on ldema200 leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : +0.33%
+  Expected price      : 65,966.5
+  1-std confidence band: [64,634.2 — 67,326.2]
+  Std dev of returns   : 2.04%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : +0.68%
+  Expected price      : 66,201.8
+  1-std confidence band: [64,732.6 — 67,704.4]
+  Std dev of returns   : 2.24%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : +0.14%
+  Expected price      : 65,843.1
+  1-std confidence band: [63,128.6 — 68,674.3]
+  Std dev of returns   : 4.21%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : -0.10%
+  Expected price      : 65,685.0
+  1-std confidence band: [62,687.4 — 68,826.0]
+  Std dev of returns   : 4.67%
+  % positive analogs   : 48.7%
+
+SEM conditioned on cdema14 leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : +0.07%
+  Expected price      : 65,798.9
+  1-std confidence band: [64,658.2 — 66,959.7]
+  Std dev of returns   : 1.75%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : +0.03%
+  Expected price      : 65,774.3
+  1-std confidence band: [64,175.6 — 67,412.7]
+  Std dev of returns   : 2.46%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : -1.39%
+  Expected price      : 64,842.4
+  1-std confidence band: [61,997.5 — 67,817.8]
+  Std dev of returns   : 4.49%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : -2.04%
+  Expected price      : 64,423.4
+  1-std confidence band: [61,194.2 — 67,823.0]
+  Std dev of returns   : 5.14%
+  % positive analogs   : 48.7%
+
+SEM conditioned on cdema50 leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : +0.15%
+  Expected price      : 65,850.2
+  1-std confidence band: [64,638.8 — 67,084.3]
+  Std dev of returns   : 1.86%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : +0.22%
+  Expected price      : 65,894.6
+  1-std confidence band: [64,336.3 — 67,490.6]
+  Std dev of returns   : 2.39%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : -1.15%
+  Expected price      : 65,002.6
+  1-std confidence band: [62,062.2 — 68,082.2]
+  Std dev of returns   : 4.63%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : -1.46%
+  Expected price      : 64,798.1
+  1-std confidence band: [61,690.8 — 68,061.9]
+  Std dev of returns   : 4.91%
+  % positive analogs   : 48.7%
+
+SEM conditioned on cdema200 leading structure (lag=10):
+
+========== Structural Event Mapping (SEM) Forecast (aux_window_start_idx) ==========
+SEM using 113 valid historical analogs (α=5.0, sim_col=cross_similarity)
+
+Horizon 5 days:
+  Expected log return : +0.17%
+  Expected price      : 65,867.0
+  1-std confidence band: [64,631.9 — 67,125.8]
+  Std dev of returns   : 1.89%
+  % positive analogs   : 49.6%
+
+Horizon 10 days:
+  Expected log return : +0.28%
+  Expected price      : 65,939.2
+  1-std confidence band: [64,399.5 — 67,515.7]
+  Std dev of returns   : 2.36%
+  % positive analogs   : 54.0%
+
+Horizon 20 days:
+  Expected log return : -0.99%
+  Expected price      : 65,104.3
+  1-std confidence band: [62,162.4 — 68,185.3]
+  Std dev of returns   : 4.62%
+  % positive analogs   : 53.1%
+
+Horizon 30 days:
+  Expected log return : -1.24%
+  Expected price      : 64,944.6
+  1-std confidence band: [61,862.8 — 68,179.9]
+  Std dev of returns   : 4.86%
+  % positive analogs   : 48.7%
+</KNOWLEDGE>
+
+<OUTPUT>
+interpret and analyze the knowledge base section (oracle output). 
+determine reliable support and resistance where price is likely to be rejected.
+determine reliable future price path
+write a brief summary in paragraph form the results of the oracle for traders and investors.
+</OUTPUT>
+
+<EXECUTION>
+
+</EXECUTION>
+
+=== CAPSULE END ===
+</textarea>
+
+<script>
+function copyCapsule() {
+    const text = document.getElementById("capsule");
+    text.select();
+    document.execCommand("copy");
+    alert("Capsule copied!");
+}
+</script>
+
+</body>
+</html>
